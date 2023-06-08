@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modern & Aesthetic Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      overflow-y: scroll;
+    }
+
+    #header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    #navigation {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    #navigation ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    #navigation li {
+      margin: 0 10px;
+    }
+
+    #navigation li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    #navigation li a:hover {
+      color: #aaa;
+    }
+
+    #content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 40px;
+      background-color: #333;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      color: #fff;
+    }
+
+    .image-container {
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .image-container:hover img {
+      transform: scale(1.05);
+    }
+
+    .image-container .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .image-container:hover .image-overlay {
+      opacity: 1;
+    }
+
+    .image-container .image-overlay p {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #222;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 18px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .button:hover {
+      background-color: #111;
+    }
+
+    .features-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 60px;
+    }
+
+    .feature {
+      width: 300px;
+      margin: 20px;
+      padding: 40px;
+      background-color: #444;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .feature h2 {
+      font-size: 24px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .feature p {
+      margin: 0;
+    }
+
+    .testimonial-container {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .testimonial {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #555;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .testimonial p {
+      font-style: italic;
+      margin: 0;
+    }
+
+    .testimonial span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>Welcome to the Modern & Aesthetic Landing Page</h1>
+  </div>
+  <div id="navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <div class="image-container">
+      <img src="image1.jpg" alt="Image 1">
+      <div class="image-overlay">
+        <p>Discover Our Amazing Products</p>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="Image2.png" alt="Image 2" style="width:38%;">
+      <div class="image-overlay">
+        <p>Join Our Exclusive Community</p>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="Image3.jpeg" alt="Image 3">
+      <div class="image-overlay">
+        <p>Get Started Today</p>
+      </div>
+    </div>
+    <div class="button-container">
+      <a href="#" class="button">Learn More</a>
+    </div>
+    <div class="features-container">
+      <div class="feature">
+        <h2>Feature 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <h2>Feature 2</h2>
+        <p>Nulla vitae elit libero, a pharetra augue.</p>
+      </div>
+      <div class="feature">
+        <h2>Feature 3</h2>
+        <p>Curabitur blandit tempus porttitor.</p>
+      </div>
+      <div class="feature">
+        <h2>Feature 4</h2>
+        <p>Donec id elit non mi porta gravida at eget metus.</p>
+      </div>
+    </div>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>"This landing page is amazing! I love the design and simplicity."<br><span>- John Doe</span></p>
+      </div>
+      <div class="testimonial">
+        <p>"The features provided are exactly what I needed for my project."<br><span>- Jane Smith</span></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
